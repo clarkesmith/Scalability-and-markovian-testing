@@ -13,7 +13,7 @@ make_markovian (blist)
 
 E.g.    a[i][j] + a[i+1][j] ... a[maxi][j] = sum of ownership
 
-    If the ownership is greater than 1 the function will randomly pick a specific instance of ownership and do one of three things depending on the value of the ownership:
+If the ownership is greater than 1 the function will randomly pick a specific instance of ownership and do one of three things depending on the value of the ownership:
 If the value is greater than 0.5 if will reduce this value by 0.1. This is to try and minimise the effects on majority ownership whilst still allowing us to reduce the overall total
 For values between and including 0.2 and 0.5 the function will remove half of the value and round the result
 If the value is less than 0.2 it will set the ownership at 0. This allows us to quickly remove small minority stakes.
